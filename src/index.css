@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Tooltip style reusable */
+.tooltip {
+  @apply absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-1 py-1 bg-[#fb9302] text-white text-xs rounded whitespace-nowrap
+    opacity-0 scale-95 translate-y-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0
+    transition-all duration-300 ease-out pointer-events-none z-50;
+}
