@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
-import { db } from "../../firebase/config";
-import Layout from "../../components/Layout";
+import { db } from "../../../firebase/config";
+import Layout from "../../../components/Layout";
 
 const capaianMaster = [
   { judul: "Capaian 1", komponen: "Knowledge Management Implementation", sub: "Subkomponen Pengorganisasian dan Penyebarluasan", maks: 110 },

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { db } from "../firebase/config";
+import { db } from "../../firebase/config";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 export default function SelfLearning() {
   const [list, setList] = useState([]);

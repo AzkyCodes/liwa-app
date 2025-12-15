@@ -1,6 +1,6 @@
-import Layout from "../../components/Layout";
+import Layout from "../../../components/Layout";
 import { useState, useEffect } from "react";
-import { db } from "../../firebase/config";
+import { db } from "../../../firebase/config";
 import { collection, getDocs, setDoc, doc, Timestamp } from "firebase/firestore";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

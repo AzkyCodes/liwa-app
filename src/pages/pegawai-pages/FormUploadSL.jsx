@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { db } from "../firebase/config";
+import { db } from "../../firebase/config";
 import {
   collection,
   getDocs,

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { db } from "../firebase/config";
+import { db } from "../../firebase/config";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 export default function OdoiDisplay() {
   const [data, setData] = useState([]);

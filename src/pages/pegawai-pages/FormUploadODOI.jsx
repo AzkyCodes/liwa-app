@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { db } from "../firebase/config";
+import { db } from "../../firebase/config";
 import {
   collection,
   getDocs,
@@ -11,7 +11,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import { motion } from "framer-motion";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 export default function FormUploadODOI() {
   const navigate = useNavigate();

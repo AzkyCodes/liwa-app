@@ -2,22 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import CapaianLO from './pages/lo/Capaian';
-import MonitoringLO from './pages/lo/Monitoring';
-import UploadForm from './pages/lo/UploadForm';
-import AI from './pages/AI';
-import ODOI from './pages/ODOI';
-import SL from './pages/SL';
-import Leaderboard from './pages/Leaderboard';
-import FormUploadAset from './pages/FormUploadAset';
-import FormUploadSelfLearning from './pages/FormUploadSL';
-import FormUploadODOI from './pages/FormUploadODOI';
+import CapaianLO from './pages/pegawai-pages/lo/Capaian';
+import MonitoringLO from './pages/pegawai-pages/lo/Monitoring';
+import UploadForm from './pages/pegawai-pages/lo/UploadForm';
+import AI from './pages/pegawai-pages/AI';
+import ODOI from './pages/pegawai-pages/ODOI';
+import SL from './pages/pegawai-pages/SL';
+import Leaderboard from './pages/pegawai-pages/Leaderboard';
+import FormUploadAset from './pages/pegawai-pages/FormUploadAset';
+import FormUploadSelfLearning from './pages/pegawai-pages/FormUploadSL';
+import FormUploadODOI from './pages/pegawai-pages/FormUploadODOI';
+import HomePegawai from './pages/pegawai-pages/HomePegawai';
 import Home from './pages/home';
-import Login from './pages/admin-pages/Login';
-import Dashboard from './pages/home-pages/Dashboard';
+import Login from './pages/Login';
 
 //admin
-import AdminLogin from './pages/admin-pages/Login';
+import AdminLogin from './pages/Login';
 import AdminLayout from './pages/admin-pages/AdminLayout';
 import Pegawai from './pages/admin-pages/Pegawai';
 import AdminCapaian from './pages/admin-pages/CapaianLO';
@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/pegawai" element={<HomePegawai />} />
       <Route path="/lo/capaian" element={<CapaianLO />} />
       <Route path="/lo/monitoring" element={<MonitoringLO />} />
       <Route path="/upload" element={<UploadForm />} />

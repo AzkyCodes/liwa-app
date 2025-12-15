@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase/config";
-import Layout from "../components/Layout";
+import { db } from "../../firebase/config";
+import Layout from "../../components/Layout";
 import { FaCrown } from "react-icons/fa";
 
 export default function Leaderboard() {
